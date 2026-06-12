@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+  <title>张先生快跑</title>
+  <link rel="stylesheet" href="assets/maimai-decoration-bg.css">
+  <link rel="stylesheet" href="index.css?v=20250320">
+  <script defer src="index.js?v=20250320"></script>
+</head>
+<body>
+  <div class="maiDecorationBg" aria-hidden="true">
+    <div class="shines-layer">
+      <div class="shines">
+        <div class="shine diamond-pink"></div>
+        <div class="shine diamond-yellow"></div>
+        <div class="shine diamond-white"></div>
+        <div class="shine star-white"></div>
+        <div class="shine star-yellow-left"></div>
+        <div class="shine star-yellow-right"></div>
+      </div>
+    </div>
+    <div class="background-layer">
+      <div class="pattern-layer"></div>
+      <div class="decoration-container">
+        <div class="auroras"><div class="aurora aurora-front"></div><div class="aurora aurora-back"></div></div>
+        <div class="clouds">
+          <div class="cloud front-left"></div><div class="cloud front-right"></div><div class="cloud front-center"></div>
+          <div class="cloud back-left"></div><div class="cloud back-right"></div><div class="cloud back-center"></div>
+        </div>
+        <div class="moon"></div>
+      </div>
+      <div class="shooting-stars">
+        <div class="shooting-star shooting-star1"><div class="shooting-star-inner"><div class="shooting-star-tail green"></div><div class="shooting-star-head green"></div></div></div>
+        <div class="shooting-star shooting-star2"><div class="shooting-star-inner"><div class="shooting-star-tail"></div><div class="shooting-star-head"></div></div></div>
+        <div class="shooting-star shooting-star3"><div class="shooting-star-inner"><div class="shooting-star-tail pink"></div><div class="shooting-star-head pink"></div></div></div>
+        <div class="shooting-star shooting-star4"><div class="shooting-star-inner"><div class="shooting-star-tail green"></div><div class="shooting-star-head green"></div></div></div>
+        <div class="shooting-star shooting-star5"><div class="shooting-star-inner"><div class="shooting-star-tail pink"></div><div class="shooting-star-head pink"></div></div></div>
+        <div class="shooting-star shooting-star6"><div class="shooting-star-inner"><div class="shooting-star-tail"></div><div class="shooting-star-head"></div></div></div>
+        <div class="shooting-star shooting-star7"><div class="shooting-star-inner"><div class="shooting-star-tail"></div><div class="shooting-star-head"></div></div></div>
+      </div>
+      <div class="rainbow"></div>
+      <div class="rainbow-bottom"></div>
+    </div>
+  </div>
+
+  <div class="page-shell">
+    <main class="game-shell" aria-label="张先生快跑">
+      <div class="hud" aria-live="polite">
+        <div>
+          <strong>张先生快跑</strong>
+          <span>长按跳更高，按↓蹲下躲雪碧</span>
+        </div>
+        <button id="bgmToggle" class="bgm-toggle" type="button" title="开关BGM">🔊 BGM</button>
+        <div class="scoreboard">
+          <span id="score">00000</span>
+          <span id="best">HI 00000</span>
+        </div>
+      </div>
+
+      <canvas id="game" width="960" height="360"></canvas>
+
+      <div id="overlay" class="overlay">
+        <h1>张先生快跑</h1>
+        <p id="overlayText">空格 / ↑ 或跳跃按钮起跳，长按跳得更高；按 ↓ 或下蹲按钮躲过雪碧。</p>
+        <div id="deathMessage" class="death-message hidden">拉裤了</div>
+        <button id="startButton" type="button">开始</button>
+      </div>
+    </main>
+
+    <div class="mobile-controls" aria-label="移动端控制">
+      <button id="jumpButton" class="control-button jump-button" type="button">跳跃</button>
+      <button id="duckButton" class="control-button duck-button" type="button">下蹲</button>
+    </div>
+  </div>
+</body>
+</html>
